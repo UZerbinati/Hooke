@@ -1,2 +1,2 @@
 all:
-	latexmk support_letter.tex
+	latexmk -pdf support_letter.tex
