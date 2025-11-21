@@ -3,6 +3,7 @@
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{parskip}
 \usepackage{times}
+\usepackage{hyperref}
 
 \setlength{\parindent}{0pt}
 
@@ -19,41 +20,53 @@
 
 Dear Members of the Selection Committee,
 
-I am writing to apply for the Hooke Research Fellowship in the Mathematical Institute.
-My research lies at the interface of \textbf{partial differential equations, numerical analysis, and scientific computing},
+I write to apply for the Hooke Research Fellowship in the Mathematical Institute.
+My research lies at the interface of \textbf{partial differential equations, numerical analysis, scientific computing and thermodynamics},
 with particular emphasis on multiscale models, kinetic descriptions of ordered fluids, and structure-preserving numerical methods.
 I identify \textbf{Numerical Analysis} as the research group closest to my work, with \textbf{OCIAM} as a natural secondary group given the applied, model-driven nature of my research programme.
 
-I have successfully passed my Confirmation of Status at the University of Oxford, and I expect to submit my DPhil thesis by the end of June 2025.
+I have successfully passed my Confirmation of Status, and I expect to submit my DPhil thesis by the end of June 2025.
 
 
 \section*{Research excellence, independence, and achievements}
 
 My research to date demonstrates independence, originality, and a consistently strong output.
-I have produced {14 research outputs}, including journal papers, proceedings articles, and preprints,
-with publications in venues such as \textit{Computer Methods in Applied Mechanics and Engineering}, \textit{Multiscale Modeling \& Simulation} and \textit{Physical Review E}.
-My contributions span the derivation and analysis of models for complex fluids arising from kinetic theory and continuum mechanics,
-as well as the development of robust numerical schemes for the resulting PDE systems.
+I have five published papers in \textit{Multiscale Modeling \& Simulation, Computer Methods in Applied Mechanics and Engineering, Physical Review E, Calcolo}, and \textit{Journal of Open Source Software}.
+I also have four submitted papers to \textit{Multiscale Modeling \& Simulation, the IMA Journal of Numerical Analysis, Computers \& Mathematics with Applications}, and the \textit{SIAM Journal on Scientific Computing}.
+My contributions span the derivation and analysis of models for complex fluids arising in many scientific applications, such as liquid crystals.
 
-In my recent work, I developed a kinetic-theory framework for ordered fluids and proposed and analysed the \emph{nematic Helmholtz--Korteweg equations}, which describe acoustic propagation in liquid crystals.
-I have also designed efficient numerical schemes for these equations, contributed to the numerical analysis of unfitted finite element methods, and helped develop a novel numerical method known as the \emph{lightning virtual element method}.
-In parallel, I have studied the \emph{preconditioned normal equations} in the context of preconditioning large-scale PDE solvers.
-Across these collaborations I have played central roles in mathematical formulation, analytical development, and software implementation.
+Boltzmann first derived the kinetic theory for monatomic gases, and eighty years later Curtiss extended it to polyatomic molecules.
+I addressed the question of developing kinetic theories for fluids possessing an arbitrary internal microstructure and established a general framework based on Capriz's order-parameter manifold.
 
-Complementing my research work, I also actively develop scientific software.
-I contribute to \texttt{Firedrake} and \texttt{NGSolve}, and I maintain my own open-source library \texttt{ngsPETSC}.
+I also investigated the derivation of hydrodynamic equations governing complex fluids at microscopic scales, starting from this generalised kinetic framework.
+In the particular case of rod-like molecules, our framework yields the Boltzmann–Curtiss equation, and I have developed a new moment-closure technique—drawing inspiration from rational thermodynamics—to recover the compressible Leslie--Ericksen equations.
+Quoting from the MathSciNet review (\url{https://mathscinet.ams.org/mathscinet/article?mr=4834435}) of our work by Z. Guo:
+“[The paper] establishes a principled kinetic foundation for compressible nematic gas dynamics and paves the way for deriving the long-sought viscous, compressible Leslie--Ericksen equations in future research.”
+
+I also recently derived the nematic Helmholtz--Korteweg equations, which describe acoustic propagation in liquid crystals, predict anisotropic sound speed, and reveal the existence of a new class of tunable acoustic resonators.
+I have also designed provably convergent schemes for this equation, which combines the challenges of a Helmholtz-type operator with those of a biharmonic problem.
+
+As a side project, I developed a novel numerical method, the lightning virtual element method, which overcomes several fundamental drawbacks of the classical virtual element method.
+In parallel, I have studied preconditioned normal equations in the context of preconditioning large-scale PDE solvers.
+
+Complementing my theoretical and computational research, I actively develop scientific software.
+I contribute to Firedrake and NGSolve, and I maintain my own open-source library, ngsPETSC.
+
 This integration of modelling, rigorous analysis, and high-performance computing is a central theme of my research.
+Across these collaborations I have played central roles in mathematical formulation, analytical development, and software implementation.
 
 \section*{Academic engagement: conferences, seminars, community}
 
 I am an active participant in the international applied mathematics community.
+I've been invited to give departmental colloquiums at the University of Prague by Josef Male, the University of Oslo by Thomas Surowiec and King Abdullah University of Science and Technology by Daniele Boffi.
+I have been invited independently of my advisor to CIRM, the Newton Institute and the University of Vienna to collaborate with Paul Stocker and to a two research conferences organised by Kaibo Hu at  Tsinghua University and the Chinese Academy of Sciences.
+
 In the past year alone, I have attended {21 conferences}, presenting my work across Europe and North America.
 I have also taken part in workshops at institutions including {CIRM} and given seminars at multiple applied mathematics groups across both continents.
 
 A complete list of presentations and slides is available at \texttt{uzerbinati.eu/slides}.
 
-In addition, I am the {founder and co-organiser of the first three editions of the Young Applied Mathematicians Conference (YAMC)},
-which has grown into a significant platform for early-career researchers in applied and computational mathematics.
+In addition, I am the {founder and co-organiser of the first three editions of the Young Applied Mathematicians Conference (YAMC) in Italy}, which has grown into a significant platform for early-career researchers in applied and computational mathematics.
 
 I am also an external collaborator with Lawrence Livermore National Laboratory on topics related to numerical methods for the kinetic theory of dense gases.
 
