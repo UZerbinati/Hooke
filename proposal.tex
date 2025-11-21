@@ -4,6 +4,7 @@
 \usepackage{parskip}
 \usepackage{times}
 \usepackage{multicol}
+\usepackage{hyperref}
 \setlength{\parindent}{0pt}
 
 \begin{document}
@@ -15,35 +16,40 @@
     Applicant: Umberto Zerbinati, \qquad Vacancy Reference: 182821\\
 \end{center}
 \begin{multicols}{2}
-Many complex fluids such as liquid crystals, ferrofluids, and polymer solutions possess an internal \emph{microstructure} that endows them with orientation or ordering at the microscale.
+While Boltzmann established the kinetic description of monatomic gases and Curtiss later extended the theory to polyatomic species, the remaining open problem is to formulate the corresponding generalisation for fluids endowed with a generic internal microstructure.
+Many complex fluids such as liquid crystals, ferrofluids, and polymer solutions possess an internal \emph{microstructure}.
 A powerful framework to include such effects is \textbf{Capriz's order parameter manifold} \cite{capriz}.
-The idea is to describes using the notion of a manifold and an associated Lie group action, the set of internal states of the fluid, such as orientation, polarisation or conformation.
+The idea is to describe the set of internal states such as orientation, polarisation or conformation, using a manifold and an associated Lie group action.
 Historically, Capriz's idea has been used to formulate phenomenological continuum theories of ordered fluids.
-In my research, I will extend this concept to a kinetic theory setting and leverage algebraic and geometric properties of the order parameter manifold to derive new models, analytical insights, and numerical methods for fluids with microstructure. 
+In my research, I had extended this concept to kinetic theory setting and leverage algebraic and geometric properties of the order parameter manifold to derive new models.
+In this fellowship I propose to apply this idea to develop analytical insights, and numerical methods for fluids with microstructure. 
 The project is organized into three interconnected strands, described below.
 
 \textbf{I. Kinetic Theory}\\
-In a recent work (with J.~A.~Carrillo, P.~E.~Farrell, and A.~Medaglia), we introduced a kinetic equation for microstructured fluids (the \emph{CFMZ kinetic model}) that extends the classical Boltzmann picture by including the appropriate generalized angular momenta associated with the microstructure \cite{cfmz}.
-Our theory yields a mesoscopic model for any continuum with microstructure characterized by a given order parameter manifold.
+In recent work (with J.~A.~Carrillo, P.~E.~Farrell, and A.~Medaglia), we introduced a framework to derive kinetic equations for microstructured fluids (\emph{CFMZ} for brevity) that extends the classical Boltzmann equation by introducing a new notion of generalised angular momenta associated with the microstructure \cite{cfmz}.
+The starting point of our approach is the BBGKY hierarchy derivation of the Boltzmann equation \cite{cfmz}.
+Our theory yields a mesoscopic model for any fluid with microstructure characterized by a given order parameter manifold.
 
-\textbf{Hydrodynamic Limits and Closure:} We will employ novel moment-closure techniques to derive macroscopic equations (analogous to Navier--Stokes or the Leslie--Ericksen equations) that faithfully capture microstructural effects. In collaboration with G.~Russo and P.~E.~Farrell, I have already devised a novel closure strategy for a simplified Boltzmann--Curtiss system, inspired by Rational Thermodynamics, which successfully reproduces the anisotropic stress of nematic liquid crystals and yields a compressible variant of the Leslie--Ericksen equations \cite{siam}.
-I plan to extend this approach, working with J.~Málek, to obtain thermodynamically consistent continuum models for arbitrary microstructures.
+\textbf{Hydrodynamic Limits and Closure:}
+In collaboration with G.~Russo and P.~E.~Farrell, we have already devised a novel closure strategy for one kinetic model arising form the CFMZ theory, i.e.~the Boltzmann--Curtiss equation, inspired by Rational Thermodynamics, which successfully reproduces the anisotropic stress of nematic liquid crystals and yields a compressible variant of the Leslie--Ericksen equations \cite{siam}.
+I plan to extend this approach, working with J.~Málek, to obtain thermodynamically consistent continuum models for arbitrary microstructure.
     
-\textbf{Properties of the Manifold} We plan to examine the impact of the manifold's geometry (curvature, topology) on the kinetic theory. In particular, I will investigate whether certain geometric conditions (e.g. convexity or curvature bounds on the manifold) allow a separation of scales on the manifold, introducing slowly-varying and rapidly-varying coordinates in the BBGKY \cite{cfmz}.
+\textbf{Properties of the Manifold} I plan to examine the impact of the manifold's geometry (curvature, topology) on the resulting kinetic theory. In particular, I will investigate whether certain geometric conditions (e.g. convexity or curvature bounds on the manifold) allow a separation of scales, introducing slowly-varying and rapidly-varying coordinates in the BBGKY \cite{cfmz}.
 The aim is to exploit this separation to simplify the kinetic equation, possibly eliminating any mean-field Vlasov term in favor of modified collision operators. 
-Furthermore, in \cite{cfmz} we showed that if the Lie group action is transitive, then the only collision invariants of the kinetic equation are the classical microscopic invariants (mass, linear momentum, generalised angular momentum and energy).
-I plant to explore these algebraic implications further using the orbit-stabiliser theorem to establish the effects that symmetries of the Lie group action have on the kinetic theory of fluids with internal microstructures.
+Furthermore, in \cite{cfmz} we showed that if the Lie group action is transitive, then the only collision invariants of the kinetic equation are the classical microscopic invariants (mass, linear momentum and energy) and a new generalised notion of angular momentum.
+I plan to explore these algebraic implications further using the orbit-stabiliser theorem to establish the effects that symmetries of the Lie group action have on the kinetic theory of fluids with internal microstructure.
     
-\textbf{Diffuse-Interface Limit:} Following ideas the work of V.~Giovangigli on diffuse-interface models \cite{diffuseinterface}, I will explore the derivation of diffuse-interface models from a kinetic description, in the context of fluids with microstructures.
+\textbf{Diffuse-Interface Limit:} 
+A diffuse-interface model for fluids with microstructure is crucial because it provides the natural framework in which defects (discontinuities in the internal microstructure) can form and evolve, and in which the appropriate Sobolev spaces governing their regularity can be rigorously identified.
+Following ideas in the work of V.~Giovangigli on diffuse-interface models \cite{diffuseinterface}, I will explore the derivation of diffuse-interface models from a kinetic description, in the context of fluids with microstructures.
 I plan to derive a diffuse-interface continuum model directly from the CFMZ kinetic equation following the ideas from the kinetic theory of dense gases.
 This model would include stress contributions analogous to the Korteweg stress and coupling terms between the density variations and microstructural quantities.
 
 \textbf{II. Liquid Crystals}
-Liquid crystals (LCs) serve as an ideal testbed for the order-parameter-manifold approach and offer exciting application opportunities. Nematic liquid crystals consist of rod-like molecules that exhibit orientational order, and their continuum behavior cannot be captured by standard fluids models. This part of the project will apply our theoretical developments to nematic LCs, particularly in the context of \textbf{nemato-acoustics} (sound propagation in liquid crystalline media). In collaboration with P.~E.~Farrell, we have developed a new continuum model for time-harmonic acoustic waves in LCs \cite{helmholtzKorteweg}.
+Liquid crystals (LCs) serve as an ideal testbed for the order parameter manifold approach and offer exciting application opportunities. Nematic liquid crystals consist of rod-like molecules that exhibit orientational order, and their continuum behaviour cannot be captured by standard fluid models.
 
-\textbf{Nematic Helmholtz--Korteweg Equations:} Building on E.~Virga's nematoacoustics theory, that regards nematic LCs as Korteweg fluids with an extra coupling between density gradients and the nematic director field \cite{virga}, we derived the \emph{nematic Helmholtz--Korteweg equations}.
-These govern time-harmonic acoustic wave propagation in a compressible nematic fluid, incorporating both elastic nematic effects and capillarity. Together with P.~Farrell and T.~van Beeck, we proved the well-posedness of these equations and developed a provably convergent finite element scheme for their numerical solution. Our simulations have reproduced experimental observations and even predicted new phenomena in liquid crystal acoustics, suggesting designs for tunable acoustic devices (e.g. tunable resonators controlled by the LC orientation).
-We now intend to study wave propagation across interfaces and defects in liquid crystals. One problem of particular interest is the \emph{transmission problem} for the nematic Helmholtz--Korteweg equations, i.e.~how an acoustic wave traverses a boundary between distinct liquid crystalline domains or between an LC and a standard fluid. Understanding transmission and reflection in these scenarios is crucial for real-life applications like display technologies or acoustic sensors using LCs.
+\textbf{Acoustics in Liquid Crystals:} To model time-harmonic waves in LCs, building on E.~Virga's nematoacoustics theory that regards nematic LCs as Korteweg fluids with an extra coupling between density gradients and the nematic director field \cite{virga}, we derived the \emph{nematic Helmholtz--Korteweg equation} \cite{helmholtzKorteweg}.
+I now intend to study wave propagation across interfaces and defects in liquid crystals. One problem of particular interest is the \emph{transmission problem} for the nematic Helmholtz--Korteweg equations, i.e.~how an acoustic wave traverses a boundary between distinct liquid crystalline domains or between an LC and a standard fluid. Understanding transmission and reflection in these scenarios is crucial for real-life applications like display technologies or acoustic sensors using LCs.
     
 \textbf{Derivation of Continuum Parameters from Kinetic Model:} A key question is how the phenomenological parameters in Virga's constitutive relations (such as the strength of coupling between density and director, or the interfacial tension coefficients) relate to underlying molecular properties. Using the diffuse-interface kinetic model (from the previous section), I will seek to estimate these constitutive parameters from first principles. In particular, I will identify the scaling regimes under which the kinetic theory for rod-like molecules reduces to the nematic Korteweg stress form. This effort, likely involving asymptotic analysis and numerical fitting, would greatly enhance the predictive power of continuum LC models and be of immense value to industry, enabling material designers to tune acoustic properties by altering molecular features.
     
@@ -55,9 +61,9 @@ The complex PDE systems arising from the above research (both kinetic equations 
 \textbf{Angular Momentum Preserving FE Schemes:} In contrast to standard fluids (where ensuring a symmetric stress tensor weakly usually suffices to conserve angular momentum), we found (with C.~Parker and P.~Brubeck) that naive mixed finite element discretizations of nematic stress can lead to a loss of angular momentum conservation if the stress symmetry is only imposed weakly.
 To address this, I will collaborate with J.~Schöberl and J.~Gopalakrishnan on developing a new class of mixed finite element or hybrid schemes that enforce the symmetry (or skew-symmetry) of certain stress components strongly.
 These schemes will be tested on benchmark LC flow problems to verify that they correctly capture the transfer between linear and angular momentum.
-Beyond classical angular momentum, the CFMZ kinetic theory introduces a \emph{generalized angular momentum} associated with the microstructure. I plan to investigate numerical methods that also conserve this quantity.
+Beyond classical angular momentum, the CFMZ kinetic theory introduces a \emph{generalised angular momentum} associated with the microstructure. I plan to investigate numerical methods that also conserve this quantity.
     
-\textbf{DSMC for Ordered Fluids:} Develop particle-based simulation tools for the kinetic equations. Direct Simulation Monte Carlo (DSMC) is a classical technique for the Boltzmann equation \cite{Pareschi}; however, applying DSMC to an extended kinetic model with orientation degrees of freedom is largely unexplored. Together with A.~Medaglia, I am currently implementing a DSMC algorithm for the CFMZ equation specializing to liquid crystals (where particles carry an orientation in addition to velocity). The project will generalize the DSMC methodology to other microstructured fluids (for example, particulate suspensions or polymer solutions) by incorporating different order parameter manifolds. These simulations will not only provide insight into the kinetics (especially in regimes difficult for analysis) but also supply data to inform moment closures and continuum model parameters.
+\textbf{DSMC for Ordered Fluids:} Develop particle-based simulation tools for the kinetic equations. Direct Simulation Monte Carlo (DSMC) is a classical technique for the Boltzmann equation \cite{Pareschi}; however, applying DSMC to an extended kinetic model with orientation degrees of freedom is largely unexplored. Together with A.~Medaglia, I am currently implementing a DSMC algorithm for the CFMZ equation specializing to liquid crystals (where particles carry an orientation in addition to velocity). The project will generalise the DSMC methodology to other microstructured fluids (for example, particulate suspensions or polymer solutions) by incorporating different order parameter manifolds. These simulations will not only provide insight into the kinetics (especially in regimes difficult for analysis) but also supply data to inform moment closures and continuum model parameters.
 
 \textbf{Deflation Techniques for Symmetric Solutions:} Many nonlinear problems in our field exhibit multiple solutions due to symmetry-breaking.
 For instance the Oseen--Frank energy functional admits multiple local minimisers all corresponding to physically valid nematic configurations.
